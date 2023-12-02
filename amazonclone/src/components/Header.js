@@ -25,7 +25,7 @@ function Header() {
                 <div className='headerNav'>
                     <Link to="/login">
                     <div className="headerOption" onClick={handleAuthentication}>
-                        <span className='headerOptionLine1'>Helloz</span>
+                        <span className='headerOptionLine1'>Hello</span>
                         <span className='headerOptionLine2'>Sign In</span>
                     </div>
                     </Link>
