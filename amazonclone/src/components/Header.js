@@ -8,7 +8,7 @@ import { auth } from "../Firebase";
 
 function Header() {
 
-    const [{basket, user}, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
     const handleAuthentication = () => {
         if (user) {
             auth.signOut();
@@ -20,14 +20,14 @@ function Header() {
             <img className='headerLogo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' />
             <div className='headerSearch'>
                 <input className='headerSearchInput' type='text' />
-                <SearchIcon className='headerSearchIcon'/>
+                <SearchIcon className='headerSearchIcon' />
 
                 <div className='headerNav'>
                     <Link to="/login">
-                    <div className="headerOption" onClick={handleAuthentication}>
-                        <span className='headerOptionLine1'>Hello</span>
-                        <span className='headerOptionLine2'>Sign In</span>
-                    </div>
+                        <div className="headerOption" onClick={handleAuthentication}>
+                            <span className='headerOptionLine1'>Hello</span>
+                            <span className='headerOptionLine2'>Sign In</span>
+                        </div>
                     </Link>
 
                     <div className="headerOption">
